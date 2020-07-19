@@ -13,23 +13,7 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 	
-	/* Custom CSS */
-	.sticky-quote {
-	position: sticky;
-	top: 10em; 
 
-		@include breakpoint(medium){
-			position: sticky;
-			top: 10em; 
-		}
-	}
-
-	.classes {
-		padding: 0 4em;
-
-	}
-
-	/* Custom CSS */
 
 	@include skel-breakpoints((
 		xlarge: '(max-width: 1680px)',
@@ -57,19 +41,40 @@
 	@mixin inner {
 		> .inner {
 			@include padding(0, 4em);
-			
 			max-width: _size(inner);
 			width: calc(100% - 4em);
 			margin: 0;
 
 			@include breakpoint(small) {
-				@include padding(3em, 0);
-				padding: 0 1em;
-				width: calc(100% - 3em);
+				@include padding(1em, 0);
+				width: calc(100% - 1em);
 				margin: 0 auto;
 			}
 		}
 	}
+
+	/* Custom CSS */
+	.sticky-quote {
+	position: sticky;
+	top: 10em; 
+
+		@include breakpoint(medium){
+			position: sticky;
+			top: 10em; 
+		}
+	}
+
+	.classes {
+		padding: 0 4em;
+
+		@include breakpoint(small) {
+		@include padding(0, 2em);
+		margin: 0 auto;
+		}
+
+	}
+
+	/* Custom CSS */
 
 // Base.
 

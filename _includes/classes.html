@@ -5,9 +5,8 @@
     <thead>
       <tr>
         <th width="30%">Date & Time</th>
-        <th width="30%">Class</th>
-        <th width="20%">Subscription Required</th>
-        <th width="20%">Link</th>
+        <th width="40%">Class</th>
+        <th width="30%">Link</th>
       </tr>
     </thead>
     <tbody>
@@ -17,10 +16,10 @@
       <tr>
         <td><h4>{{ record.fields.date-time | date: "%R, %a %-d %b %Y" }}</h4></td>
         <td><p>{{ record.fields.title }}</p></td>
-        <td><p>{{ record.fields.patreon }}</p></td>
         <td>
           <ul class="actions vertical">
-            <li><a href="{{ record.fields.link }}" class="button special fit">Join Class</a></li>
+            {% if record.fields.patreon == true %}<li><a href="{{ record.fields.link }}" class="button special fit">Join Class</a></li>{% endif %}
+            {% if record.fields.patreon != true %}<li><a href="{{ record.fields.link }}" class="button fit">Join Class</a></li>{% endif %}
           </ul>
         </td>
       </tr>
