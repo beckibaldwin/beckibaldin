@@ -51,14 +51,15 @@
 
 	@mixin inner {
 		> .inner {
-			@include padding(0, 0);
+			@include padding(0, 4em);
+			padding: 0 4em;
 			max-width: _size(inner);
-			width:100%;
-			/*width: calc(100% - 2em);*/
+			width: calc(100% - 4em);
 			margin: 0;
 
 			@include breakpoint(small) {
 				@include padding(3em, 0);
+				padding: 0 1em;
 				width: calc(100% - 3em);
 				margin: 0 auto;
 			}
