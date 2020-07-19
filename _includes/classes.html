@@ -14,7 +14,7 @@
       {% for record in sortedRecords %}
       {% if record.fields.publish == true | sort: record.fields.date-time %}
       <tr>
-        <td><h4>{{ record.fields.date-time | date: "%R, %a %-d %b %Y" }}</h4></td>
+        <td><h4>{{ record.fields.date-time | date: "%R - %a %-d %b %Y" }}</h4></td>
         <td><p>{{ record.fields.title }}</p></td>
         <td>
           <ul class="actions vertical">
