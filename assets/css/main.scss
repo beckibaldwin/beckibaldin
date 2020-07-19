@@ -24,6 +24,11 @@
 		}
 	}
 
+	.classes {
+		padding: 0 4em;
+
+	}
+
 	/* Custom CSS */
 
 	@include skel-breakpoints((
@@ -52,7 +57,7 @@
 	@mixin inner {
 		> .inner {
 			@include padding(0, 4em);
-			padding: 0 4em;
+			
 			max-width: _size(inner);
 			width: calc(100% - 4em);
 			margin: 0;
