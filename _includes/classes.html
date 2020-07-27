@@ -7,7 +7,7 @@
       <div class="8u 12u(small)">
         <h3>{{ record.fields.title }} - {{ record.fields.date-time | date: "%R - %a %-d %b %Y" }}</h3>
       </div>
-      <div class="4u 12u(small)" style="text-align: right;">
+      <div class="4u 12u(small)">
         <ul class="actions vertical">
           {% if record.fields.patreon == true %}<li><a href="{{ record.fields.link }}" class="button special">Join Class</a></li>{% endif %}
           {% if record.fields.patreon != true %}<li><a href="{{ record.fields.link }}" class="button">Join Class</a></li>{% endif %}
