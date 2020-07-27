@@ -6,3 +6,5 @@ nav-menu: true
 order: 4
 image: 'assets/images/t-type/t-type-hollow-dark.jpg'
 ---
+
+{% include classes.html %}
