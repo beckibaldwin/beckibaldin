@@ -74,6 +74,12 @@
 
 	}
 
+	.flexor {
+		display: flex; 
+		align-items: center;
+		justify-content: flex-start;
+	}
+
 	/* Custom CSS */
 
 // Base.
@@ -97,7 +103,6 @@
 
 // Layout.
 
-	@import 'layout/guitarpage';
 	@import 'layout/header';
 	@import 'layout/banner';
 	@import 'layout/main';
