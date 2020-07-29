@@ -65,7 +65,7 @@
 	}
 
 	.classes {
-		padding: 0 4em;
+		padding: 4em;
 
 		@include breakpoint(small) {
 		@include padding(0, 2em);
@@ -78,6 +78,32 @@
 		display: flex; 
 		align-items: center;
 		justify-content: flex-start;
+	}
+
+	.alternate {
+		background: _palette(accent1);
+		box-sizing: border-box;
+
+		h1, h2, h3, h4, h5, p {
+			color: _palette(bg);
+		}
+	}
+
+	.glow {
+		animation: glow 600ms ease-out infinite alternate;
+		border: 1px solid _palette(accent3);
+		box-sizing: border-box;
+		}
+
+	@keyframes glow {
+	    0% {
+			border-color: _palette(accent3);
+			box-shadow: 0 0 _palette(accent3);
+	    }	
+	    100% {
+			border-color: _palette(accent3);
+			box-shadow: 0 0 20px _palette(accent3);
+	    }
 	}
 
 	/* Custom CSS */

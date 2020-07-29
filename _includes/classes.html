@@ -1,11 +1,12 @@
 <!-- NEW: No links -->
-<h2 style="margin-bottom: 0;">This Week's Classes</h2>
+<h2>Upcoming Classes</h2>
 {% assign sortedRecords = site.data.classes.records | sort: 'fields.date-time' %}
 {% for record in sortedRecords %}
 {% if record.fields.publish == true | sort: record.fields.date-time %}
 <div class="row">
       <div class="8u 12u(small)">
-        <h3>{{ record.fields.title }} - {{ record.fields.date-time | date: "%R - %a %-d %b %Y" }}</h3>
+        <h4>{{ record.fields.title }} - {{ record.fields.date-time | date: "%R - %a %-d %b %Y" }}</h4>
+        <p>{{ record.fields.description }}</p>
       </div>
       <div class="4u 12u(small)">
         <ul class="actions vertical">
