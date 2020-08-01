@@ -1,9 +1,4 @@
 <!DOCTYPE html>
-<!--
-    Forty by HTML5 UP
-    html5up.net | @ajlkn
-    Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-  -->
 <html>
 
   {% include head.html %}
@@ -15,34 +10,89 @@
     
     <!-- Main -->
     <div id="main" class="alt">
+      <div class="inner">
+        <h1 style="margin-bottom:0;">Online Classes</h1>
+        <section style="display: inline-block; width: auto; margin-bottom: 2em;">
+          <div class="button-group filter-button-group">
+            <a class="button active" data-filter="*">All</a>
+            <a class="button" data-filter=".on-demand">On Demand</a>
+            <a class="button" data-filter=".live">Live</a>
+            <a class="button" data-filter=".free">Free</a>
+            <!-- {% for category in site.categories %}
+              <a class="button" data-filter=".{{ category | first }}">{{ category | first }}</a>
+            {% endfor %} -->
+          </div> 
+          <p style="margin-top: 2em;">My classes are free to those working for the NHS, key workers and for those who have lost their income because of this global pandemic. Let's help each other to stay strong and powerful at this time!</p>
+        </section>
+      </div>
 
-      <!-- One -->
-      <section id="one">
-      	<div class="inner">
+        
+      <!-- Airtable Content -->
+      <div class="grid row" style="position: relative; display: flex; align-items: flex-start; flex-flow: column wrap; justify-content: flex-start; width: 100%;">
+        {% assign sortedRecords = site.data.classes.records | sort: 'fields.date-time' %}
+        {% for record in sortedRecords %}
+        {% if record.fields.publish == true | sort: record.fields.date-time %}
+        <div class="element-item {{ record.fields.category }} 4u 12u$(medium)">
+          <span class="image"><img src="{{ record.fields.thumbnail[0].url }}"/></span>
           <div class="box">
-            <h1>Upcoming Gigs</h1>
-            {% for post in site.posts %}
-        	  {% if post.title != 404 %}
-        	  <header class="major">
-        	    <h2>{{ post.title }}</h2>
-              {% if post.live-date %}<p>Date: <strong>{{ post.live-date }}</strong></p>{% endif %}
-              {% if post.address %}<p>Venue: <strong>{{ post.address }}</strong></p>{% endif %}
-        	  </header>
-        	  {% if post.image %}<span class="image main"><img src="{{ site.baseurl }}/{{ post.image }}" alt="" /></span>{% endif %}
-        	  {% if post.description %}<h3>{{ post.description }}</h3>{% endif %}
-            <p>{{ post.content }}</p>
-        	  {% endif %}
-            {% endfor %}
-        	</div>
-          <div class="box">
-            <h3>Now booking gigs for Summer/Autumn 2020</h3>
+            <h3 style="text-decoration: capitalize; margin-bottom: 0;">{{ record.fields.title }}</h3>
+            <p>{{ record.fields.category | Titlecase }}<br />{{ record.fields.date-time | date: "%R %A %-d %b %Y" }}<br />{{ record.fields.price }}</p>
+            <p>{{ record.fields.content }}</p>
             <ul class="actions vertical">
-              <li><a href="../book" class="button next scrolly">Book the band</a></li>
-              <!-- <li><a href="#" class="button fit">Log In</a></li> -->
+              {% if record.fields.embed-code %}<li><a href="{{ record.fields.link }}" class="button">Join Class</a></li>{% endif %}
             </ul>
           </div>
         </div>
-      </section>
+        {% endif %}
+        {% endfor %}
+      </div>
+
+
+        <!-- Airtable Content -->
+        <!-- <div class="grid" style="position: relative; display: flex; align-items: flex-start; flex-flow: column wrap; justify-content: flex-start;">
+        {% assign sortedRecords = site.data.classes.records | sort: 'fields.date-time' %}
+        {% for record in sortedRecords %}
+          {% if record.fields.publish == true | sort: record.fields.date-time %}
+          <div class="element-item {{ record.fields.category }} box" style="width: 100%; left: 0px; top: 0px; height: auto;">
+            <div class="row">
+              <span class="image 4u 12u$(small)" style="height:100%; max-width: 35%; display: block; margin-bottom: 0; background-size: cover;"><img src="{{ record.fields.thumbnail[0].url }}"/></span>
+              <div class="right 8u 12u$(small)" style="padding:1.5em;">
+                <h2 style="text-decoration: capitalize; margin-bottom: 0;">
+                  {{ record.fields.title }}
+                </h2>
+                <h4><span style="text-transform: capitalize;">{{ record.fields.category | Titlecase }}</span><br />{{ record.fields.date-time | date: "%R %A %-d %b %Y" }}<br />{{ record.fields.price }}</h4>
+                <p><strong>{{ record.fields.excerpt }}</strong></p>
+                <p>{{ record.fields.content }}</p>
+                <ul class="actions vertical">
+                  {% if record.fields.embed-code %}<li><a href="{{ record.fields.link }}" class="button">Join Class</a></li>{% endif %}
+                </ul>
+              </div>
+            </div>
+           </div>
+          {% endif %}
+        {% endfor %}
+        </div> -->
+
+      </div>
+
+<script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/isotope-layout@3.0/dist/isotope.pkgd.js"></script>
+<script>
+  // init Isotope
+  var $grid = $('.grid').isotope({
+    // options
+    
+  });
+  // filter items on button click
+  $('.filter-button-group').on( 'click', 'a', function() {
+    var filterValue = $(this).attr('data-filter');
+    $grid.isotope({ filter: filterValue });
+  });
+  $('.button-group a.button').on('click', function(){
+    $('.button-group a.button').removeClass('active');
+    $(this).addClass('active');
+  });
+</script>
 
     </div>
 

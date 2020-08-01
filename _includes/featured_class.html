@@ -1,0 +1,24 @@
+<div style="position: relative; display: flex; align-items: center; flex-flow: column wrap; justify-content: flex-start; width: 100%;">
+  <h2>Latest Class</h2>
+  <div class="grid row" style="position: relative; display: flex; align-items: center; flex-flow: column wrap; justify-content: flex-start; width: 100%;">
+    {% assign sortedRecords = site.data.classes.records | sort: 'fields.date-time' %}
+    {% for record in sortedRecords limit:1 %}
+    {% if record.fields.publish == true | sort: record.fields.date-time %}
+    <div class="element-item {{ record.fields.category }} 6u 12u$(medium) box" style="border:#fff !important;">
+      <span class="image"><img src="{{ record.fields.thumbnail[0].url }}"/></span>
+      <div class="box">
+        <h3 style="text-decoration: capitalize; margin-bottom: 0;">{{ record.fields.title }}</h3>
+        <p>{{ record.fields.category | Titlecase }}<br />{{ record.fields.date-time | date: "%R %A %-d %b %Y" }}<br />{{ record.fields.price }}</p>
+        <p>{{ record.fields.content }}</p>
+        <ul class="actions vertical">
+          {% if record.fields.embed-code %}<li><a href="{{ record.fields.link }}" class="button">Join Class</a></li>{% endif %}
+        </ul>
+      </div>
+    </div>
+    {% endif %}
+    {% endfor %}
+  </div>
+  <ul class="actions">
+      <li><a href="{{ "/classes" | absolute_url }}" class="button fit">View All Classes</a></li>
+  </ul>
+</div>

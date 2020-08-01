@@ -40,10 +40,10 @@
 
 	@mixin inner {
 		> .inner {
-			@include padding(0, 4em);
-			max-width: _size(inner);
-			width: calc(100% - 4em);
-			margin: 0;
+			@include padding(4em, 4em);
+			/*max-width: _size(inner);*/
+			/*width: calc(100% - 4em);
+			margin-right:0;*/
 
 			@include breakpoint(small) {
 				@include padding(1em, 0);
@@ -66,10 +66,18 @@
 
 	.classes {
 		padding: 4em;
-
 		@include breakpoint(small) {
 		@include padding(0, 2em);
 		margin: 0 auto;
+		}
+
+		.box {
+			border: #fff solid 1px;
+		}
+
+		.button {
+			border: #fff solid 1px;
+			color: #fff;	
 		}
 
 	}
