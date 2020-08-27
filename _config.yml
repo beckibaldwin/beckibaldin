@@ -13,6 +13,8 @@ zip_code:
 country: UK
 phone: 
 permalink: /:title/
+future: true
+
 
 repository: beckibaldwin.github.io/beckibaldwin
 
