@@ -42,9 +42,9 @@
                 {% capture currentDate %}{{ 'now' | date: '%s'}}{% endcapture %}
                 {% capture postDate %}{{ record.fields.date-time | date: '%s'}}{% endcapture %}
                 {% if currentDate > postDate %}
-                {% if record.fields.link %}<li><a href="{{ record.fields.link }}" class="button">Watch On-Demand</a></li>{% endif %}
+                {% if record.fields.patreon-link %}<li><a href="{{ record.fields.patreon-link }}" class="button">Watch On-Demand</a></li>{% endif %}
                 {% else %}
-                {% if record.fields.link %}<li><a href="{{ record.fields.link }}" class="button">Join Live Class</a></li>{% endif %}
+                {% if record.fields.zoom-link %}<li><a href="{{ record.fields.zoom-link }}" class="button">Join Live Class</a></li>{% endif %}
                 {% endif %}
                 
               </ul>
