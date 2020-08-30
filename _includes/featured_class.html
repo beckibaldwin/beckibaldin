@@ -1,20 +1,46 @@
-<div style="position: relative; display: flex; align-items: center; flex-flow: column wrap; justify-content: flex-start; width: 100%;">
+<div style="position: relative; display: flex; align-items: center; flex-flow: row wrap; justify-content: center; width: 100%;">
   <h2>Start your yoga journey now</h2>
-  <h3>Watch my latest on-demand class:</h3>
-  <div class="grid row" style="position: relative; display: flex; align-items: center; flex-flow: column wrap; justify-content: flex-start; width: 100%;">
-    {% assign sortedRecords = site.data.classes.records | sort: 'fields.date-time' %}
+  
+  <div class="grid row" style="position: relative; display: flex; justify-content:center; align-items: stretch; flex-flow: row wrap; width: 100%;">
+
+    <!-- Live Class -->
+    {% assign sortedRecords = site.data.classes.records | sort: 'fields.date-time' | reverse %}
     {% for record in sortedRecords | limit:1 %}
     {% capture currentDate %}{{ 'now' | date: '%s'}}{% endcapture %}
     {% capture postDate %}{{ record.fields.date-time | date: '%s'}}{% endcapture %}
-    {% if currentDate > postDate %}
-    <div class="element-item {{ record.fields.category }} 6u 12u$(medium)" style="padding: 1em">
+    {% if currentDate < postDate %}
+    <div class="element-item {{ record.fields.category }} 4u 12u$(medium)" style="padding: 1em">
       <div class="box">
+        <h4>Next Live Class:</h4>
         <h2 style="text-decoration: capitalize; margin-bottom: 0;">{{ record.fields.title }}</h2>
         <p>{{ record.fields.category | Titlecase }}<br />{{ record.fields.date-time | date: "%R %A %-d %b %Y" }}<br />{{ record.fields.price }}</p>
         <p>{{ record.fields.content }}</p>
         <ul class="actions vertical">
           
-          {% if record.fields.patreon-link %}<li><a href="{{ record.fields.patreon-link }}" class="button">Watch On-Demand</a></li>{% endif %}
+          {% if record.fields.patreon-link %}<li><a href="{{ record.fields.patreon-link }}" class="button special">Watch On-Demand</a></li>{% endif %}
+          
+        </ul>
+      </div>
+      <span class="image"><img src="{{ record.fields.thumbnail[0].url }}"/></span>
+    </div>
+    {% endif %}
+    {% endfor %}
+
+    <!-- On Demand -->
+    {% assign sortedRecords = site.data.classes.records | sort: 'fields.date-time' %}
+    {% for record in sortedRecords | limit:1 %}
+    {% capture currentDate %}{{ 'now' | date: '%s'}}{% endcapture %}
+    {% capture postDate %}{{ record.fields.date-time | date: '%s'}}{% endcapture %}
+    {% if currentDate > postDate %}
+    <div class="element-item {{ record.fields.category }} 4u 12u$(medium)" style="padding: 1em">
+      <div class="box">
+        <h4>Latest On-Demand Class:</h4>
+        <h2 style="text-decoration: capitalize; margin-bottom: 0;">{{ record.fields.title }}</h2>
+        <p>{{ record.fields.category | Titlecase }}<br />{{ record.fields.date-time | date: "%R %A %-d %b %Y" }}<br />{{ record.fields.price }}</p>
+        <p>{{ record.fields.content }}</p>
+        <ul class="actions vertical">
+          
+          {% if record.fields.patreon-link %}<li><a href="{{ record.fields.patreon-link }}" class="button special">Watch On-Demand</a></li>{% endif %}
           
         </ul>
       </div>
@@ -23,7 +49,7 @@
     {% endif %}
     {% endfor %}
   </div>
-  <ul class="actions">
-      <li><a href="{{ "/classes" | absolute_url }}" class="button fit"><i class="fa fa-calendar" aria-hidden="true"></i>&nbsp;&nbsp;Class Schedule</a></li>
-  </ul>
+        <ul class="actions">
+          <li><a href="{{ "/classes" | absolute_url }}" class="button fit"><i class="fa fa-calendar" aria-hidden="true"></i>&nbsp;&nbsp;Class Schedule</a></li>
+      </ul>
 </div>
