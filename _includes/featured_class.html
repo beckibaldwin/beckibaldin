@@ -10,15 +10,13 @@
     {% capture postDate %}{{ record.fields.date-time | date: '%s'}}{% endcapture %}
     {% if currentDate < postDate %}
     <div class="element-item {{ record.fields.category }} 4u 12u$(medium)" style="padding: 1em">
+      <h4>Next Live Class:</h4>
       <div class="box">
-        <h4>Next Live Class:</h4>
         <h2 style="text-decoration: capitalize; margin-bottom: 0;">{{ record.fields.title }}</h2>
         <p>{{ record.fields.category | Titlecase }}<br />{{ record.fields.date-time | date: "%R %A %-d %b %Y" }}<br />{{ record.fields.price }}</p>
         <p>{{ record.fields.content }}</p>
         <ul class="actions vertical">
-          
-          {% if record.fields.patreon-link %}<li><a href="{{ record.fields.patreon-link }}" class="button special">Watch On-Demand</a></li>{% endif %}
-          
+          <li><a href="/book-class?class_name={{ record.fields.title | replace: ' ','' }}&date={{ record.fields.date-time | date: "%-d-%b-%Y" }}" class="button special">Book Now</a></li>
         </ul>
       </div>
       <span class="image"><img src="{{ record.fields.thumbnail[0].url }}"/></span>
@@ -33,8 +31,8 @@
     {% capture postDate %}{{ record.fields.date-time | date: '%s'}}{% endcapture %}
     {% if currentDate > postDate %}
     <div class="element-item {{ record.fields.category }} 4u 12u$(medium)" style="padding: 1em">
+      <h4>Latest On-Demand Class:</h4>
       <div class="box">
-        <h4>Latest On-Demand Class:</h4>
         <h2 style="text-decoration: capitalize; margin-bottom: 0;">{{ record.fields.title }}</h2>
         <p>{{ record.fields.category | Titlecase }}<br />{{ record.fields.date-time | date: "%R %A %-d %b %Y" }}<br />{{ record.fields.price }}</p>
         <p>{{ record.fields.content }}</p>
@@ -49,7 +47,4 @@
     {% endif %}
     {% endfor %}
   </div>
-        <ul class="actions">
-          <li><a href="{{ "/classes" | absolute_url }}" class="button fit"><i class="fa fa-calendar" aria-hidden="true"></i>&nbsp;&nbsp;Class Schedule</a></li>
-      </ul>
 </div>

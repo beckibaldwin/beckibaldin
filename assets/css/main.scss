@@ -80,6 +80,21 @@
 			color: #fff;	
 		}
 
+		&.special {
+			background-color: _palette(bg);
+			box-shadow: none;
+			color: _palette(fg-bold);
+
+			&:hover, &:active {
+				background-color: _palette(highlight);
+				color: _palette(bg) !important;
+			}
+
+			&:active {
+				background-color: desaturate(darken(_palette(highlight), 15), 5);
+			}
+		}
+
 	}
 
 	.flexor {
