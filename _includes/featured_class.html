@@ -4,7 +4,7 @@
 
     <!-- Live Class -->
     {% assign sortedRecords = site.data.classes.records | sort: 'fields.date-time' %}
-    {% for record in sortedRecords %}
+    {% for record in sortedRecords | limit:1 %}
     {% capture currentDate %}{{ 'now' | date: '%s'}}{% endcapture %}
     {% capture postDate %}{{ record.fields.date-time | date: '%s'}}{% endcapture %}
     {% if currentDate > postDate %}
