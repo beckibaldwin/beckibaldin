@@ -4,7 +4,7 @@
 <!-- Header -->
 <header id="header"{% if page.layout == "landing" %} class="alt style2"{% endif %}{% if page.layout == "home" %} class="alt"{% endif %}>
 	<!-- <a href="{{ "" | absolute_url }}/" class="logo"><strong>{{ site.title }}</strong> <span>{{ site.subtitle }}</span></a> -->
-	<a href="{{ "{{ site.baseurl }}" | absolute_url }}" id="header-logo-container">
+	<a href="{{ "../" | relative_url }}" id="header-logo-container">
 		<img id="header-logo" src="{{ "/assets/images/logo.svg" | relative_url}}">
 	</a>
 	<nav>
@@ -17,7 +17,7 @@
 	<ul class="links">
         {% for page in site.pages %}
 		    {% if page.layout == "home"%}
-		        <li><a href="{{ "{{ site.baseurl }}" | absolute_url }}">{{ page.title }}</a></li>
+		        <li><a href="{{ "../" | relative_url }}">{{ page.title }}</a></li>
 	    	{% endif %}
 		{% endfor %}
 		{% assign sorted_pages = site.html_pages | sort:"order" %}
