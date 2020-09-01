@@ -24,7 +24,7 @@ nav-menu: false
 		</div>
 		<div class="field half">
 			<label for="email">Date</label>
-			<input type="text" name="_replyto" id="date" />
+			<input type="text" id="date" />
 		</div>
 <!-- 		<div class="field">
 			<div class="select-wrapper">
