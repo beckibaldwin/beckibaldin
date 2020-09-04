@@ -50,7 +50,8 @@
 
 
 <body>
-	<!-- Wrapper -->
+
+    <!-- Wrapper -->
 <div id="wrapper">
 
 <!-- Header -->
@@ -98,6 +99,8 @@
 		
 		    
 		
+		    
+		
 		
 		
 		    
@@ -110,8 +113,6 @@
 		
 		    
 		
-		    
-		        <li><a href="http://localhost:4000/free-flow/">Free 20m Yoga Flow</a></li>
 		    
 		
 		    
@@ -126,72 +127,53 @@
 		
 		    
 		
+		    
+		        <li><a href="http://localhost:4000/free-flow/">Free 20m Yoga Flow</a></li>
+		    
+		
 	</ul>
 	<ul class="actions vertical">
       <li><a href="http://localhost:4000/classes" class="button special fit"><i class="fa fa-calendar" aria-hidden="true"></i>&nbsp;&nbsp;Online Classes</a></li>
     </ul>
 </nav>
 
- 
-    <div id="main">
-    	<div class="classes">
-    		<h2></h2>
-    		<!-- Contact -->
-<section>
-	<h2>Book Class</h2>
-	<form action="https://formspree.io/mail@johnhayn.es" method="POST">
-		<div class="field half first">
-			<label for="name">Name</label>
-			<input type="text" name="name" />
-		</div>
-		<div class="field half">
-			<label for="email">Email</label>
-			<input type="text" name="_replyto" id="email" />
-		</div>
-		<div class="field half first">
-			<label for="name">Class</label>
-			<input type="text" name="name" id="class_name" />
-		</div>
-		<div class="field half">
-			<label for="email">Date</label>
-			<input type="text" id="date" />
-		</div>
-<!-- 		<div class="field">
-			<div class="select-wrapper">
-				<select name="demo-category" id="demo-category">
-					<option value="" ></option>
-					<option value="1">Beginners Flow</option>
-					<option value="1">Wake Up Flow</option>
-					<option value="1">Strong Flow</option>
-					<option value="1">Private Tutition</option>
-				</select>
-			</div>
-		</div> -->
-		<div class="field">
-			<label for="message">Message</label>
-			<textarea name="message" id="message" rows="6"></textarea>
-		</div>
-		<ul class="actions">
-			<li><input type="submit" value="Book Now &amp; Pay" class="special" /></li>
-			<li><input type="reset" value="Clear" /></li>
-		</ul>
-	</form>
-</section>
 
-<!-- URL Parameters -->
-<script type="text/javascript">
-	var hashParams = window.location.hash.substr(1).split('&'); // substr(1) to remove the `#`
-for(var i = 0; i < hashParams.length; i++){
-    var p = hashParams[i].split('=');
-    document.getElementById(p[0]).value = decodeURIComponent(p[1]).replace('+', ' ').replace('+', ' ');;
-}
 
-</script>
+<div id="main">
+    <section class="inner row">
+        <!-- Contact -->
+        <section>
+            <h2>Book Class</h2>
+            <form action="https://formspree.io/mail@johnhayn.es" method="POST">
+                <div class="field half first">
+                    <label for="name">Name</label>
+                    <input type="text" name="name" />
+                </div>
+                <div class="field half">
+                    <label for="email">Email</label>
+                    <input type="text" name="_replyto" id="email" />
+                </div>
+                <div class="field half first">
+                    <label for="name">Class</label>
+                    <input type="text" name="name" id="class_name" />
+                </div>
+                <div class="field half">
+                    <label for="email">Date</label>
+                    <input type="text" id="date" />
+                </div>
+                <div class="field">
+                    <label for="message">Message</label>
+                    <textarea name="message" id="message" rows="6"></textarea>
+                </div>
+                <ul class="actions">
+                    <li><input type="submit" value="Book Now & Pay" class="special" onclick="window.location.href='#modal1'" /></li>
+                    <li><input type="reset" value="Clear" /></li>
+                </ul>
+            </form>
+        </section>     
 
- 
-		</div>
-	</div>
-	<!-- Footer -->
+    </section>
+    <!-- Footer -->
 	<footer id="footer">
 		<div class="row 100% uniform">
 			<div class="8u 12u$(medium) links">
@@ -225,6 +207,17 @@ for(var i = 0; i < hashParams.length; i++){
 	<!--[if lte IE 8]><script src="http://localhost:4000/assets/js/ie/respond.min.js"></script><![endif]-->
 	<script src="http://localhost:4000/assets/js/main.js"></script>
 
+
+</div>
 </body>
 
 </html>
+
+<!-- URL Parameters -->
+        <script type="text/javascript">
+            var hashParams = window.location.hash.substr(1).split('&'); // substr(1) to remove the `#`
+            for(var i = 0; i < hashParams.length; i++){
+                var p = hashParams[i].split('=');
+                document.getElementById(p[0]).value = decodeURIComponent(p[1]).replace('+', ' ').replace('+', ' ');;
+            }
+        </script>

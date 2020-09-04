@@ -26,6 +26,8 @@
         </section>
       </div>
 
+
+
         
       <!-- Airtable Content -->
       <div class="inner" style="padding-top: 0;">
@@ -48,7 +50,7 @@
                 {% if currentDate > postDate %}
                 {% if record.fields.patreon-link %}<li><a href="{{ record.fields.patreon-link }}" class="button">Watch On-Demand</a></li>{% endif %}
                 {% else %}
-                <li><a href="../book-class#class_name={{ record.fields.title | replace: " ", "+" }}&date={{ record.fields.date-time | date: "%-d-%b-%Y" }}" class="button">Book Now</a></li>
+                <li><a href="../book-class#class_name={{ record.fields.title | replace: " ", "+" }}&date={{ record.fields.date-time | date: "%-d-%b-%Y" }}&modal=hidden" class="button">Book Now</a></li>
                 {% endif %}
                 
               </ul>
@@ -62,7 +64,13 @@
         </div>
       </div>
 
-      </div>
+    </div>
+
+    {% include footer.html %}
+
+  </body>
+
+</html>
 
 <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
 <script src="https://unpkg.com/isotope-layout@3.0/dist/isotope.pkgd.js"></script>
@@ -82,11 +90,3 @@
     $(this).addClass('active');
   });
 </script>
-
-    </div>
-
-    {% include footer.html %}
-
-  </body>
-
-</html>

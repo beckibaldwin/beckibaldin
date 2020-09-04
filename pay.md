@@ -1,5 +1,5 @@
 ---
-layout: book
+layout: pay
 <!-- title: BOOK Class -->
 description: 'Book a class'
 show_tile: false
