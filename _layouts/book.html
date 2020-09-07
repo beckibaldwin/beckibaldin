@@ -19,20 +19,21 @@
             <h2>Book Class</h2>
             <form action="https://formspree.io/xvowjeen" method="POST">
                 <div class="field half first">
-                    <label for="name">Name</label>
-                    <input type="text" name="name" />
-                </div>
-                <div class="field half">
-                    <label for="email">Email</label>
-                    <input type="text" name="_replyto" id="email" />
-                </div>
-                <div class="field half first">
                     <label for="name">Class</label>
                     <input type="text" name="name" id="class_name" />
                 </div>
                 <div class="field half">
                     <label for="email">Date</label>
                     <input type="text" id="date" />
+                </div>
+
+                <div class="field half first">
+                    <label for="name">Name</label>
+                    <input type="text" name="name" required/>
+                </div>
+                <div class="field half">
+                    <label for="email">Email</label>
+                    <input type="text" name="_replyto" id="email" required/>
                 </div>
                 <div class="field">
                     <label for="message">Message</label>

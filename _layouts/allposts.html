@@ -50,7 +50,7 @@
                 {% if currentDate > postDate %}
                 {% if record.fields.patreon-link %}<li><a href="{{ record.fields.patreon-link }}" class="button">Watch On-Demand</a></li>{% endif %}
                 {% else %}
-                <li><a href="../book-class#class_name={{ record.fields.title | replace: " ", "+" }}&date={{ record.fields.date-time | date: "%-d-%b-%Y" }}&modal=hidden" class="button">Book Now</a></li>
+                <li><a href="../book-class#class_name={{ record.fields.title | replace: " ", "+" }}&date={{ record.fields.date-time | date: "%-d-%b-%Y" }}" class="button">Book Now</a></li>
                 {% endif %}
                 
               </ul>
