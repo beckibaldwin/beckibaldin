@@ -7,7 +7,7 @@
     {% assign sortedRecords = site.data.classes.records | sort: 'fields.date-time' %}
     {% for record in sortedRecords | limit:3 %}
     <div class="element-item {{ record.fields.category }} 4u 12u$(medium)" style="padding: 1em">
-      <div class="box">
+      <div class="box" style="margin-bottom:.5em;">
         <h2 style="text-decoration: capitalize; margin-bottom: 0;">{{ record.fields.title }}</h2>
         {% if record.fields.date-time %}<p>{{ record.fields.date-time | date: "%R %A %-d %b %Y" }}</p>{% endif %}
         {% if record.fields.price %}<p>{{ record.fields.price }}</p>{% endif %}
