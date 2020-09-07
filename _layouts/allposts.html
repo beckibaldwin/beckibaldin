@@ -40,10 +40,10 @@
           <div class="element-item {{ record.fields.category }} 4u 12u$(medium)" style="padding: 1em">
             <div class="box">
               <h2 style="text-decoration: capitalize; margin-bottom: 0;">{{ record.fields.title }}</h2>
-              {% if record.fields.category %}<span style="text-transform: uppercase"><p>{{ record.fields.category | Titlecase }}</p></span>{% endif %}
-              {% if record.fields.date-time %}<p>{{ record.fields.date-time | date: "%R %A %-d %b %Y" }}</p>{% endif %}
-              {% if record.fields.price %}<p>{{ record.fields.price }}</p>{% endif %}
-              {% if record.fields.content %}<p>{{ record.fields.content }}</p>{% endif %}
+              {% if record.fields.category %}<span style="text-transform: uppercase"><p style="margin:0;">{{ record.fields.category | Titlecase }}</p></span>{% endif %}
+              {% if record.fields.date-time %}<p style="margin:0;">{{ record.fields.date-time | date: "%R %A %-d %b %Y" }}</p>{% endif %}
+              {% if record.fields.price %}<p style="margin:0;">{{ record.fields.price }}</p>{% endif %}
+              {% if record.fields.content %}<p style="margin:0;">{{ record.fields.content }}</p>{% endif %}
               <ul class="actions vertical">
                 {% capture currentDate %}{{ 'now' | date: '%s'}}{% endcapture %}
                 {% capture postDate %}{{ record.fields.date-time | date: '%s'}}{% endcapture %}
