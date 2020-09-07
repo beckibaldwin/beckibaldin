@@ -38,7 +38,7 @@
           {% capture postDate %}{{ record.fields.date-time | date: '%s'}}{% endcapture %}
           {% if currentDate < postDate %}
           <div class="element-item {{ record.fields.category }} 4u 12u$(medium)" style="padding: 1em">
-            <div class="box">
+            <div class="box" style="margin-bottom:.5em;">
               <h2 style="text-decoration: capitalize; margin-bottom: 0;">{{ record.fields.title }}</h2>
               {% if record.fields.category %}<span style="text-transform: uppercase"><p style="margin:0;">{{ record.fields.category | Titlecase }}</p></span>{% endif %}
               {% if record.fields.date-time %}<p>{{ record.fields.date-time | date: "%R %A %-d %b %Y" }}</p>{% endif %}
