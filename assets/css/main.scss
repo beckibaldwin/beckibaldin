@@ -64,10 +64,18 @@
 		}
 	}
 
+	.freeclass {
+		padding: 4em;
+		@include breakpoint(small) {
+		@include padding(2em);
+		margin: 0 auto;
+	}
+
+
 	.classes {
 		padding: 4em;
 		@include breakpoint(small) {
-		@include padding(0, 2em);
+		@include padding(2em);
 		margin: 0 auto;
 		}
 
