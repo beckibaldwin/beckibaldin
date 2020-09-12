@@ -84,8 +84,6 @@
 		    
 		
 		    
-		
-		    
 		        <li><a href="/">Home</a></li>
 	    	
 		
@@ -101,6 +99,8 @@
 		
 		    
 		
+		    
+		
 		
 		
 		    
@@ -113,6 +113,12 @@
 		
 		    
 		
+		    
+		        <li><a href="http://localhost:4000/yoga/">Yoga Membership</a></li>
+		    
+		
+		    
+		        <li><a href="http://localhost:4000/free-flow/">Free 20m Yoga Flow</a></li>
 		    
 		
 		    
@@ -120,15 +126,11 @@
 		    
 		
 		    
-		        <li><a href="http://localhost:4000/tuition/">Private Tuition</a></li>
+		        <li><a href="http://localhost:4000/tuition/">Personal Training</a></li>
 		    
 		
 		    
 		
-		    
-		
-		    
-		        <li><a href="http://localhost:4000/free-flow/">Free 20m Yoga Flow</a></li>
 		    
 		
 	</ul>
@@ -146,12 +148,12 @@
             <h2>Book Class</h2>
             <form action="https://formspree.io/xvowjeen" method="POST">
                 <div class="field half first">
-                    <label for="name">Class</label>
-                    <input type="text" name="name" id="class_name" />
+                    <label for="message">Class</label>
+                    <input type="text" name="class" id="class_name" />
                 </div>
                 <div class="field half">
-                    <label for="email">Date</label>
-                    <input type="text" id="date" />
+                    <label for="message">Date</label>
+                    <input type="text" name="date" id="date" />
                 </div>
 
                 <div class="field half first">
@@ -167,7 +169,7 @@
                     <textarea name="message" id="message" rows="6"></textarea>
                 </div>
                 <ul class="actions">
-                    <li><input type="submit" value="Book Now & Pay" class="special" onclick="window.location.href='#modal1'" /></li>
+                    <li><input type="submit" value="Book Now & Pay" class="special" /></li>
                     <li><input type="reset" value="Clear" /></li>
                 </ul>
             </form>
@@ -215,10 +217,10 @@
 </html>
 
 <!-- URL Parameters -->
-        <script type="text/javascript">
-            var hashParams = window.location.hash.substr(1).split('&'); // substr(1) to remove the `#`
-            for(var i = 0; i < hashParams.length; i++){
-                var p = hashParams[i].split('=');
-                document.getElementById(p[0]).value = decodeURIComponent(p[1]).replace('+', ' ').replace('+', ' ');;
-            }
-        </script>
+<script type="text/javascript">
+    var hashParams = window.location.hash.substr(1).split('&'); // substr(1) to remove the `#`
+    for(var i = 0; i < hashParams.length; i++){
+        var p = hashParams[i].split('=');
+        document.getElementById(p[0]).value = decodeURIComponent(p[1]).replace('+', ' ').replace('+', ' ');;
+    }
+</script>

@@ -40,7 +40,7 @@
                     <textarea name="message" id="message" rows="6"></textarea>
                 </div>
                 <ul class="actions">
-                    <li><input type="submit" value="Book Now & Pay" class="special" onclick="window.location.href='#modal1'" /></li>
+                    <li><input type="submit" value="Book Now & Pay" class="special" /></li>
                     <li><input type="reset" value="Clear" /></li>
                 </ul>
             </form>
@@ -55,10 +55,10 @@
 </html>
 
 <!-- URL Parameters -->
-        <script type="text/javascript">
-            var hashParams = window.location.hash.substr(1).split('&'); // substr(1) to remove the `#`
-            for(var i = 0; i < hashParams.length; i++){
-                var p = hashParams[i].split('=');
-                document.getElementById(p[0]).value = decodeURIComponent(p[1]).replace('+', ' ').replace('+', ' ');;
-            }
-        </script>
+<script type="text/javascript">
+    var hashParams = window.location.hash.substr(1).split('&'); // substr(1) to remove the `#`
+    for(var i = 0; i < hashParams.length; i++){
+        var p = hashParams[i].split('=');
+        document.getElementById(p[0]).value = decodeURIComponent(p[1]).replace('+', ' ').replace('+', ' ');;
+    }
+</script>
