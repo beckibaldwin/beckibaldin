@@ -7,26 +7,35 @@ order: 4
 image: 
 ---
 
-What to elevate your training with 1-2-1 sessions that are carefully constructed to each individual?
-I will work with you to construct a bespoke training program that will help you to achieve and maintain your goals. This is not a “one size fits all'' approach, I want this to be something that works in with your lifestyle, your current level of fitness and any injuries past or present. 
-
-What will I get?
-* Consultation and fitness assessment 
-* Bespoke training program
-* Progress assessments
-* Weekly or Bi-weekly check ins 
-* Nutritional analysis and guidence
-* Guidance on training outside of sessions
-* Accountability and support 
-* Direct access to contact me when needed
-
-
-From £40ph. Packages available.
-
-Locations
-* Central london gyms
-* Virtual
-* Park / Home
+<section class="row">
+    <div class="8u 12u(small)">
+        <p>What to elevate your training with 1-2-1 sessions that are carefully constructed to each individual?</p>
+        <p>I will work with you to construct a bespoke training program that will help you to achieve and maintain your goals. This is not a “one size fits all'' approach, I want this to be something that works in with your lifestyle, your current level of fitness and any injuries past or present. </p>
+        <h2>What will I get?</h2>
+        <ul>
+            <li>Consultation and fitness assessment</li>
+            <li>Bespoke training program</li>
+            <li>Progress assessments</li>
+            <li>Weekly or Bi-weekly check ins</li>
+            <li>Nutritional analysis and guidence</li>
+            <li>Guidance on training outside of sessions</li>
+            <li>Accountability and support</li>
+            <li>Direct access to contact me when needed</li>
+        </ul>  
+        <h3>From £40ph. Packages available.</h3>
+        <h2>Locations</h2>
+        <ul>
+            <li>Central london gyms</li>
+            <li>Virtual</li>
+            <li>Park / Home</li>
+        </ul>  
+    </div>
+    <div class="4u 12u(small)">
+        <span class="image">
+            <img src="{{ 'assets/images/personal-training-weights.jpg' | relative_url }}" alt="">
+        </span>
+    </div>
+</section>
 
 <section>
     <h2>Book your free consultation</h2>
