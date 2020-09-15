@@ -24,7 +24,21 @@ image:
 			<li>Unlimited booking for all LIVE classes</li>
 			<li>Pose break down and discussion</li>
 			<li>Short stretch and strength videos </li>
-		</ul>	
+		</ul>
+		<ul class="actions vertical">
+			<li><a href="https://www.patreon.com/join/BeckiBaldwin/signup?ru=%2Fjoin%2FBeckiBaldwin%2Fcheckout%3Frid%3D5573475%26" class="button special">Join Now</a></li>
+		</ul>
+		<h2>De-Stress + Stretch Classes</h2>
+		<p>£24 per month (inc tax)</p>
+		<ul>
+			<li>A new 50min class recording each month</li>
+			<li>Unlimited booking for all De-stress + Stretch live classes </li>
+			<li>All recordings are available for the whole time you are a Patreon Member so you get a whole archive of 40+ classes to choose from</li>
+			<li>Pose break down and discussion</li>
+		</ul>		
+		<ul class="actions vertical">
+			<li><a href="https://www.patreon.com/join/BeckiBaldwin/signup?ru=%2Fjoin%2FBeckiBaldwin%2Fcheckout%3Frid%3D5820299%26" class="button special">Join Now</a></li>
+		</ul>
 		<h2>Beginners Classes</h2>
 		<p>£18 per month (inc Tax)</p>
 		<ul>
@@ -33,14 +47,9 @@ image:
 			<li>All recordings are available for the whole time you are a Patreon Member so you get a whole archive of classes to choose from</li>
 			<li>Pose break down and discussion</li>
 		</ul>	
-		<h2>De-Stress + Stretch Classes</h2>
-		<p>£48per month (inc tax)</p>
-		<ul>
-			<li>A new 50min class recording each month</li>
-			<li>Unlimited booking for all De-stress + Stretch live classes </li>
-			<li>All recordings are available for the whole time you are a Patreon Member so you get a whole archive of 40+ classes to choose from</li>
-			<li>Pose break down and discussion</li>
-		</ul>	
+		<ul class="actions vertical">
+			<li><a href="https://www.patreon.com/join/BeckiBaldwin/signup?ru=%2Fjoin%2FBeckiBaldwin%2Fcheckout%3Frid%3D5443478%26" class="button special">Join Now</a></li>
+		</ul>
 	</div>
 	<div class="12u 12u(small)">
 	    <span class="image">
