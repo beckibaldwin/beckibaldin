@@ -8,11 +8,6 @@ image:
 ---
 
 <section class="row">
-	<div class="4u 12u(small)">
-	    <span class="image">
-	        <img src="{{ 'assets/images/yoga-membership-pose.jpg' | relative_url }}" alt="">
-	    </span>
-	</div>
 	<div class="8u 12u(small)">
 		<p>My membership gives you the chance to take class with me anytime anywhere with the option to cancel at any point, no bad vibes. With all of my classes in one place and the chance to connect with other like minded people to chat and discuss postures, transitions as well as stretches specifically chosen by you.</p>
 		<h2>Unlimited</h2>
@@ -50,6 +45,11 @@ image:
 		<ul class="actions vertical">
 			<li><a href="https://www.patreon.com/join/BeckiBaldwin/signup?ru=%2Fjoin%2FBeckiBaldwin%2Fcheckout%3Frid%3D5443478%26" class="button special">Join Now</a></li>
 		</ul>
+	</div>
+	<div class="4u 12u(small)">
+	    <span class="image">
+	        <img src="{{ 'assets/images/yoga-membership-pose.jpg' | relative_url }}" alt="">
+	    </span>
 	</div>
 	<div class="12u 12u(small)">
 	    <span class="image">
