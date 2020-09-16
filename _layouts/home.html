@@ -13,13 +13,10 @@
     {% include header.html %}
 
 <div id="main">
-    <section class="inner row">
+    <section class="inner row" style="background:#2F2F30; color:#EDEBF2;">
         <!-- Image -->
-        <div class="4u 12u(small)">
-            <span class="image">
-                    <img src="{{ 'assets/images/online-yoga-classes.jpeg' | relative_url }}" alt="">
-                </span>
-        </div>
+<!--         <div class="4u 12u(small)">
+        </div> -->
         <!-- Intro text -->
         <div class="8u 12u(small)">
             <p>Join me for a <strong>variety of online yoga classes</strong> to help lift your confidence and try something new, making it part of your lifestyle.</p>
@@ -30,9 +27,25 @@
                 <!-- <li><a href="https://www.patreon.com/BeckiBaldwin" class="button special fit"><i class="fa fa-credit-card-alt" aria-hidden="true"></i>&nbsp;&nbsp;Subscribe</a></li> -->
             </ul>
         </div>
+        <div class="8u 12u$(medium) links">
+                <div class="footerbox">
+                    <ul class="icons">
+                        {% if site.facebook_url %}
+                        <li><a href="{{ site.facebook_url }}" class="icon alt fa-facebook" target="_blank"><span class="label">Facebook</span></a></li>
+                        {% endif %}
+                        {% if site.twitter_url %}
+                        <li><a href="{{ site.twitter_url }}" class="icon alt fa-twitter" target="_blank"><span class="label">Twitter</span></a></li>
+                        {% endif %}
+                        {% if site.instagram_url %}
+                        <li><a href="{{ site.instagram_url }}" class="icon alt fa-instagram" target="_blank"><span class="label">Instagram</span></a></li>
+                        {% endif %}
+                        {% if site.linkedin_url %}
+                        <li><a href="{{ site.linkedin_url }}" class="icon alt fa-linkedin" target="_blank"><span class="label">LinkedIn</span></a></li>
+                        {% endif %}
+                    </ul>
+                </div>
+            </div>
     </section>
-
-    <hr class="major" style="margin-bottom: 0;">
 
     <!-- Classes Table -->
     <section class="classes alternate">

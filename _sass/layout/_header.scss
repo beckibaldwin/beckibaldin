@@ -10,7 +10,7 @@
 	text-decoration:none;
 	display:flex;
 	justify-content: flex-start;
-	width:50%;
+	width:30%;
 	height:inherit;
 	max-width: calc(50% - 2em);
 	max-height:120px;
@@ -18,8 +18,8 @@
 }
 
 #header-logo {
-	width:60%;
-	max-width:60%;
+	width:100%;
+	max-width:100%;
 	display:block;
 	margin:0;
 }
@@ -36,6 +36,7 @@
 		@include vendor('display', 'flex');
 		/*background-color: _palette(bg-alt);*/
 		background-color: #2F2F30;
+		color:#EDEBF2;
 		/*box-shadow: 0 0 0.25em 0 rgba(0,0,0,0.15);*/
 		cursor: default;
 		font-weight: _font(weight-bold);
@@ -157,7 +158,8 @@
 			@include vendor('transition', 'opacity #{_duration(banner)} ease');
 			@include vendor('transition-delay', '0.5s');
 			@include vendor('animation', 'none');
-			background-color: transparent;
+			background-color: #2F2F30;
+			color:#EDEBF2;
 			box-shadow: none;
 			position: absolute;
 
