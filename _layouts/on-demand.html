@@ -18,6 +18,7 @@
             <a class="button" data-filter=".strong">Strong</a>
             <a class="button" data-filter=".de-stress">De-Stress</a>
             <a class="button" data-filter=".beginners">Beginners</a>
+            <a class="button" data-filter=".totalbody">Total Body</a>
             <!-- {% for category in site.categories %}
               <a class="button" data-filter=".{{ category | first }}">{{ category | first }}</a>
             {% endfor %} -->
@@ -35,7 +36,7 @@
           {% capture currentDate %}{{ 'now' | date: '%s'}}{% endcapture %}
           {% capture postDate %}{{ record.fields.date-time | date: '%s'}}{% endcapture %}
           {% if currentDate > postDate  %}
-          <div class="element-item {{ record.fields.category }} 4u 12u$(medium)" style="padding: 1em">
+          <div class="element-item {{ record.fields.category | join: ' ' }} 4u 12u$(medium)" style="padding: 1em">
             <div class="box">
               <h2 style="text-decoration: capitalize; margin-bottom: 0;">{{ record.fields.title }}</h2>
               <p>{{ record.fields.category | Titlecase }}<br />{{ record.fields.date-time | date: "%R %A %-d %b %Y" }}<br />{{ record.fields.price }}</p>
