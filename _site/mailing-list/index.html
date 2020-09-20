@@ -19,14 +19,14 @@
 	<!-- Open Graph -->
 	<meta property="og:locale" content="en_GB">
 	<meta property="og:type" content="article">
-	<meta property="og:title" content="About Me">
-	<meta property="og:url" content="http://localhost:4000/about/">
+	<meta property="og:title" content="Becki Baldwin">
+	<meta property="og:url" content="http://localhost:4000/mailing-list/">
 	<meta property="og:image" content="" />
 	<meta property="og:site_name" content="Becki Baldwin">
 	<meta property="article:publisher" content="http://localhost:4000" />
 	<meta property="article:author" content="http://localhost:4000" />
 	<meta property="article:published_time" content="" />
-	<meta property="og:description" content="I strive towards helping other people, whether it be a high intensity class to get your heart pumping and endorphins flowing, or a relaxing yoga and meditation class to centre yourself after a busy week.">
+	<meta property="og:description" content="Mailing List">
 
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 
@@ -50,7 +50,8 @@
 
 
 <body>
-	<!-- Wrapper -->
+
+    <!-- Wrapper -->
 <div id="wrapper">
 
 	<!-- Header -->
@@ -141,39 +142,31 @@
 	      <li><a href="http://localhost:4000/classes" class="button special fit"><i class="fa fa-calendar" aria-hidden="true"></i>&nbsp;&nbsp;Online Classes</a></li>
 	    </ul>
 	</nav>
- 
-    <div id="main">
-    	<div class="classes">
-    		<h2>About Me</h2>
-    		<section class="row">
-	<div class="8u 12u(small)">
-	Hi Guys Im Becki - Yoga teacher and personal Trainer
-	<br />
-	<br />
-	I’ve always believed that to be fulfilled in your career, you need to be aligned with your values – mine being passion, purpose and motivation. My passion is Dance and fitness and after completing my 3-year BA (Hons) degree in Contemporary Dance at Trinity Laban, I knew I’d never be “working” a day in my life, as I’d found something I truly loved to do. My passion is now my job, which is an amazing feeling to have. My purpose is to constantly share the knowledge and information I have gained through my dance training across contemporary, commercial and ballet, to help people understand and appreciate how the body moves and feels, which is the philosophy I work off every day in my teaching for myself and my clients.
-	<br />
-	<br />
-	For you as a client, i want you to walk away from a session with me feeling empowered with positivity and self confidence. I strive towards helping other people, whether it be a high intensity class to get your heart pumping and endorphins flowing, or a relaxing yoga class to centre yourself after a busy week. Mixing up your workouts are not only beneficial for your health, but also keeps you on your toes so you never get complacent, constantly challenging your body and mind. 
-	<br />
-	<br />
-	My aim is to reach as many people as possible with my online classes, especially during these difficult times. I hope that I am able to create a safe space for everyone. Somewhere that brings you time to connect back to yourself and realise the power on potential that you have always had!
-	<br />
-	<br />
-	You can join me for a variety of classes online and around London to help lift your confidence and try something new. 
-	<br />
-	<br />
-	This is my take on yoga, fitness and wellness.
-	</div>
-	<div class="4u 12u(small)">
-	    <span class="image">
-	        <img src="/assets/images/Becki-baldwin-yoga.jpg" alt="" />
-	    </span>
-	</div>
-</section>
- 
-		</div>
-	</div>
-	<!-- Footer -->
+
+
+<div id="main">
+    <section class="inner row">
+        <!-- Contact -->
+        <section>
+            <h2>Sign-up to my mailing list</h2>
+            <form action="https://formspree.io/xvowjeen" method="POST">
+                <div class="field half first">
+                    <label for="name">Name</label>
+                    <input type="text" name="name" required/>
+                </div>
+                <div class="field half">
+                    <label for="email">Email</label>
+                    <input type="text" name="_replyto" id="email" required/>
+                </div>
+                <ul class="actions">
+                    <li><input type="submit" value="Book Now & Pay" class="special" /></li>
+                    <li><input type="reset" value="Clear" /></li>
+                </ul>
+            </form>
+        </section>     
+
+    </section>
+    <!-- Footer -->
 	<footer id="footer">
 		<div class="row 100% uniform">
 			<div class="8u 12u$(medium) links">
@@ -214,6 +207,17 @@
 	<!--[if lte IE 8]><script src="http://localhost:4000/assets/js/ie/respond.min.js"></script><![endif]-->
 	<script src="http://localhost:4000/assets/js/main.js"></script>
 
+
+</div>
 </body>
 
 </html>
+
+<!-- URL Parameters -->
+<script type="text/javascript">
+    var hashParams = window.location.hash.substr(1).split('&'); // substr(1) to remove the `#`
+    for(var i = 0; i < hashParams.length; i++){
+        var p = hashParams[i].split('=');
+        document.getElementById(p[0]).value = decodeURIComponent(p[1]).replace('+', ' ').replace('+', ' ');;
+    }
+</script>

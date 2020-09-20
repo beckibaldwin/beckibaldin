@@ -9,15 +9,15 @@ image:
 
 <section class="row">
     <div class="8u 12u(small)">
-        <p>What to elevate your training with 1-2-1 sessions that are carefully constructed to each individual?</p>
-        <p>I will work with you to construct a bespoke training program that will help you to achieve and maintain your goals. This is not a “one size fits all'' approach, I want this to be something that works in with your lifestyle, your current level of fitness and any injuries past or present. </p>
-        <h2>What will I get?</h2>
+        <p>Want to elevate your training with 1-2-1 sessions that are carefully constructed to each individual?</p>
+        <p>I will work with you to construct a bespoke training program that will help you to achieve and maintain your goals. This is not a “one size fits all'' approach, I want this to be something that works in with your lifestyle, your current level of fitness and any injuries past or present.</p>
+        <h2>What will you get?</h2>
         <ul>
             <li>Consultation and fitness assessment</li>
             <li>Bespoke training program</li>
             <li>Progress assessments</li>
-            <li>Weekly or Bi-weekly check ins</li>
-            <li>Nutritional analysis and guidence</li>
+            <li>Weekly or Bi-weekly check-ins</li>
+            <li>Nutritional analysis and guidance</li>
             <li>Guidance on training outside of sessions</li>
             <li>Accountability and support</li>
             <li>Direct access to contact me when needed</li>

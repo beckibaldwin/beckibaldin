@@ -9,7 +9,7 @@ image:
 
 <section class="row">
 	<div class="8u 12u(small)">
-		<p>My membership gives you the chance to take class with me anytime anywhere with the option to cancel at any point, no bad vibes. With all of my classes in one place and the chance to connect with other like minded people to chat and discuss postures, transitions as well as stretches specifically chosen by you.</p>
+		<p>My membership gives you the chance to take classes with me anytime anywhere with the option to cancel at any point, no bad vibes. All of my yoga and fitness classes are in one place and the chance to connect with other like minded people. With the Unlimited membership you get the choice of how you work out and how you stretch! From 16 workout classes and 16 yoga classes a month you get to choose what works best within your weekly schedule. </p>
 		<h2>Unlimited</h2>
 		<p>£48per month (inc tax)</p>
 		<ul>
@@ -23,17 +23,6 @@ image:
 		<ul class="actions vertical">
 			<li><a href="https://www.patreon.com/join/BeckiBaldwin/signup?ru=%2Fjoin%2FBeckiBaldwin%2Fcheckout%3Frid%3D5573475%26" class="button special">Join Now</a></li>
 		</ul>
-		<h2>De-Stress + Stretch Classes</h2>
-		<p>£24 per month (inc tax)</p>
-		<ul>
-			<li>A new 50min class recording each month</li>
-			<li>Unlimited booking for all De-stress + Stretch live classes </li>
-			<li>All recordings are available for the whole time you are a Patreon Member so you get a whole archive of 40+ classes to choose from</li>
-			<li>Pose break down and discussion</li>
-		</ul>		
-		<ul class="actions vertical">
-			<li><a href="https://www.patreon.com/join/BeckiBaldwin/signup?ru=%2Fjoin%2FBeckiBaldwin%2Fcheckout%3Frid%3D5820299%26" class="button special">Join Now</a></li>
-		</ul>
 		<h2>Beginners Classes</h2>
 		<p>£18 per month (inc Tax)</p>
 		<ul>
@@ -44,6 +33,17 @@ image:
 		</ul>	
 		<ul class="actions vertical">
 			<li><a href="https://www.patreon.com/join/BeckiBaldwin/signup?ru=%2Fjoin%2FBeckiBaldwin%2Fcheckout%3Frid%3D5443478%26" class="button special">Join Now</a></li>
+		</ul>
+		<h2>De-Stress + Stretch Classes</h2>
+		<p>£24 per month (inc tax)</p>
+		<ul>
+			<li>A new 50min class recording each month</li>
+			<li>Unlimited booking for all De-stress + Stretch live classes </li>
+			<li>All recordings are available for the whole time you are a Patreon Member so you get a whole archive of 40+ classes to choose from</li>
+			<li>Pose break down and discussion</li>
+		</ul>		
+		<ul class="actions vertical">
+			<li><a href="https://www.patreon.com/join/BeckiBaldwin/signup?ru=%2Fjoin%2FBeckiBaldwin%2Fcheckout%3Frid%3D5820299%26" class="button special">Join Now</a></li>
 		</ul>
 	</div>
 	<div class="4u 12u(small)">
