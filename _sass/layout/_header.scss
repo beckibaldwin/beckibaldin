@@ -157,7 +157,7 @@
 			@include vendor('transition', 'opacity #{_duration(banner)} ease');
 			@include vendor('transition-delay', '0.5s');
 			@include vendor('animation', 'none');
-			background-color: _palette(fg);
+			background-color: _palette(accent1);
 			color:#ffffff;
 			box-shadow: none;
 			position: absolute;
