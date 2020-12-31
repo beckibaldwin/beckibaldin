@@ -95,7 +95,9 @@
 	}
 
 	h6 {
-		font-size: 0.7em;
+		font-size: 2em;
+		color: _palette(fg);
+		font-family: _font(header); 
 	}
 
 	@include breakpoint(small) {
