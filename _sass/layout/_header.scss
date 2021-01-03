@@ -8,9 +8,12 @@
 /* Header Logo */
 #header-logo-container {
 	text-decoration:none;
+	border:none;
+}
+
+#header-logo {
 	display:flex;
 	justify-content: flex-start;
-	height:auto;
 	width: calc(50% - 2em);
 	border:0;
 }
