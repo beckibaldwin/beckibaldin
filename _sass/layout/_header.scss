@@ -10,15 +10,15 @@
 	text-decoration:none;
 	display:flex;
 	justify-content: flex-start;
-	width:30%;
 	height:inherit;
-	max-width: calc(50% - 2em);
-	max-height:120px;
+	width: calc(50% - 2em);
+	max-width: 40%;
+	height: auto;
+	max-height: auto;
 	border:0;
 }
 
 #header-logo {
-	width:100%;
 	max-width:100%;
 	display:block;
 	margin:0;
@@ -160,7 +160,7 @@
 			background-color: _palette(accent1);
 			color:#ffffff;
 			box-shadow: none;
-			position: absolute;
+			position: relative;
 
 			&.style1 { .logo { strong { color: _palette(accent1); } } }
 			&.style2 { .logo { strong { color: _palette(accent2); } } }
@@ -212,15 +212,15 @@
 
 			.logo {
 				padding: 0 1em;
-				width: 60%;
+				max-width: 100%;
+				height: auto;
 				
 			}
 
 
 			#header-logo-container {
-			width:100%;
-			max-width:100%;
-			height: 8rem;
+			width:50%;
+			max-width:50%;
 			}
 
 			nav {

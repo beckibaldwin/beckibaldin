@@ -20,10 +20,10 @@
 
 // Font.
 	$font: (
-		family:				('Questrial', 'Source Sans Pro', Helvetica, sans-serif),
-		header:				('Questrial', 'cursive'),
-		family-fixed:		('Helvetica Neue', monospace),
-		cursive:			('Mrs Saint Delafield', 'cursive'),
+		family:				('Questrial', Helvetica, sans-serif),
+		header:				('Questrial', Helvetica, sans-serif),
+		family-fixed:		('Helvetica Neue', Helvetica, sans-serif),
+		cursive:			('Mrs Saint Delafield', 'cursive', serif),
 		weight:				300,
 		weight-bold:		600,
 		letter-spacing:		0.025em,
