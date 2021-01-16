@@ -10,7 +10,7 @@ GEM
     addressable (2.4.0)
     airtable (0.0.9)
       httparty
-    bigdecimal (3.0.0)
+    bigdecimal (2.0.0)
     coffee-script (2.4.1)
       coffee-script-source
       execjs
@@ -163,6 +163,7 @@ DEPENDENCIES
   faraday (= 0.17.3)
   github-pages
   html-proofer
+  httparty
   jekyll
   jekyll-sitemap
   jekyll-watch
