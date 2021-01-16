@@ -34,7 +34,7 @@ sass:
   style: compressed
 
 # sitemap
-plugins:
+plugins_dir:
   - jekyll-sitemap
   - jekyll-airtable
   - environment_variables_generator
